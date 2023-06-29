@@ -1,0 +1,27 @@
+//Este es el que tiene el
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["vite.config.*", "vitest.config.*", "cypress.config.*"],
+  "compilerOptions": {
+    "moduleResolution": "node", //agrego esta linea
+    "composite": true,
+    "types": ["node"]
+  }
+}
+
+//Este me quedo codificando el proyecto
+/*{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  */
+  //"include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  //"exclude": ["src/**/__tests__/*"],
+  /*"compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": ["./src/*"]
+    }    
+  }
+}
+*/
